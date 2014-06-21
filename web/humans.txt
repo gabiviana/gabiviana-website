@@ -1,0 +1,34 @@
+/* TEAM */
+
+Gabriela Viana
+  Email: gabiviana@gabiviana.com
+  Twitter: @gabiviana
+  Location: Montréal, Québec, Canada
+
+Renoir Boulanger
+  Email: hello@renoirboulanger.com
+  Twitter: @renoirb
+  Location: Montréal, Quebec, Canada
+  Web: renoirboulanger.com
+
+
+
+/* THANKS */
+
+Supview
+  Twitter: @Supview
+  Web: www.iamsupview.be
+
+
+
+/* SITE */
+
+Git repository: https://github.com/gabiviana/gabiviana-website/
+
+Components:
+  - https://github.com/gabiviana/gabiviana-website/package.json
+  - https://github.com/gabiviana/gabiviana-website/bower.json
+
+Software:
+  - Grunt
+  - Theme from Subview
