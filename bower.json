@@ -4,6 +4,7 @@
   "description": "Homepage of Gabriela Viana",
   "author": "Gabriela Viana <gabiviana@gabiviana.com>",
   "dependencies": {
-    "jquery": "1.10.1"
+    "jquery": "1.10.1",
+    "modernizr": "2.6.2"
   }
 }
