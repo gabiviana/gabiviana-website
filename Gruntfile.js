@@ -2,7 +2,6 @@
 
 module.exports = function (grunt) {
   'use strict';
-  require('time-grunt')(grunt);
 
   grunt.initConfig({
     connect: {
@@ -84,5 +83,4 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-ftp-deploy');
   grunt.loadNpmTasks('grunt-usemin');
-  grunt.loadNpmTasks('time-grunt');
 };
