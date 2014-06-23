@@ -7,8 +7,13 @@ module.exports = function (grunt) {
     connect: {
       server: {
         options: {
-          port: 8000,
           base: 'web',
+          keepalive: true
+        }
+      },
+      dist: {
+        options: {
+          base: 'dist',
           keepalive: true
         }
       }
@@ -40,10 +45,10 @@ module.exports = function (grunt) {
           src: [
             '*.{ico,txt,html,php}',
             '.htaccess',
-            'portfolio/*.*',
+            'portfolio/{,*/}*.*',
             'img/*.{gif,png,jpg}',
-            'css/*.css',
-            'fonts/*.*'
+            'css/*.min.css',
+            'fonts/{,*/}*.*'
           ]
         }]
       }
@@ -51,7 +56,7 @@ module.exports = function (grunt) {
     cssmin: {
       dist: {
         files: {
-          'dist/css/gabiviana.css': [
+          'dist/css/gabiviana.min.css': [
               '.tmp/css/{,*/}*.css',
               'web/css/{,*/}*.css'
           ]

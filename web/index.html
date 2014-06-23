@@ -4,26 +4,32 @@
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
 <!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product">
+<!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
-  <title>Gabriela Viana ✲ UX/UI Designer ✲ Montreal, Quebec</title>
+  <title>Gabriela Viana ✲ UX/UI Designer ✲ Montréal, Québec</title>
   <meta name="description" content="Gabriela Viana ✲ UX/UI Designer" />
   <meta name="keywords" content="gabriela, ux, ui, montreal" />
   <meta itemprop="name" content="Gabriela Viana UX/UI Designer" />
-  <meta itemprop="description" content="I am passionate about new technologies and making impact in how people experience them." />
-  <!-- build:js js/modernizr.min.js -->
+  <meta itemprop="description" content="I am passionate about new technologies and making impact in how people experience them."
+  />
+  <!-- build:js js/head.min.js -->
   <script src="bower_components/modernizr/modernizr.js"></script>
+  <script src="bower_components/jquery/jquery.js" type="text/javascript"></script>
   <!-- endbuild -->
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
   <meta itemprop="image" content="img/logo.png" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-  <!-- build:css css/gabiviana.css -->
-  <link rel="stylesheet" href="css/gumby.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"
+  />
+  <!-- build:css css/gabiviana.min.css -->
+  <link rel="stylesheet" href="imports/gumby.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/metrize.css" />
-  <link rel="stylesheet" href="css/hoverex-all.css" />
+  <link rel="stylesheet" href="imports/metrize.css" />
+  <link rel="stylesheet" href="imports/hoverex-all.css" />
   <!-- endbuild -->
 </head>
 
@@ -31,96 +37,96 @@
 <body>
 
 
-<div class="container">
-		<div class="mobile-menu">
-			<section id="collapse">
-				<div class="row">
-					<div class="mobile-menu-inner">
-  					<ul class="nav-mobile">
+  <div class="container">
+    <div class="mobile-menu">
+      <section id="collapse">
+        <div class="row">
+          <div class="mobile-menu-inner">
+            <ul class="nav-mobile">
               <li><a href="#header">Home</a></li>
-    					<li><a href="#works">Projects</a></li>
+              <li><a href="#works">Projects</a></li>
               <li><a href="#whatwedo">The process</a></li>
-    					<li><a href="#contact">Contact</a></li>
-    				  <li><a href="#aboutme">About me</a></li>
-  					</ul>
-					</div>
-				</div>
-			</section>
-			<a href="#" id="collapse-menu"><img alt="Gabriela Viana UX UI Designer" src="img/logo.png" width="40" height="40" /></a>
-		</div>
-
-
-<!-- NAVIGATION ############################################### -->
-
-
-		<div class="cbp-af-header">
-			<nav class="row">
-				<div id="logo"><a href="#"><img alt="Gabriela Viana UX UI Designer" src="img/logo.png"></a></div>
-				  <ul id="nav">
-				    <li><a href="#contact">Contact</a></li>
-				    <li><a href="#aboutme">About me</a></li>
-            <li><a href="#whatwedo">The process</a></li>
-	  			  <li><a class="selected" href="#works">Projects</a></li>
-				  </ul>
-			</nav>
-		</div>
-
-
-<!-- END NAVIGATION ############################################### -->
-
-
-
-<!-- HEADER ############################################### -->
-
-<section id="header">
-
-    <div class="row">
-
-      <div class="twelve columns centered">
-        <header>
-          <h2 class="fade-it3">Hello!</h2>
-          <h4 class="lead fade-it2">
-I am Gabriela, a UX/UI Designer located in Montreal - Canada. </h4>
-          <p class="fade-it2">I am passionate about new technologies and making impact in how people experience them</p>
-        </header>
-      </div>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#aboutme">About me</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <a href="#" id="collapse-menu">
+        <img alt="Gabriela Viana UX UI Designer" src="img/logo.png" width="40" height="40"
+        />
+      </a>
     </div>
 
-</section>
 
-<!-- END HEADER ############################################### -->
+    <!-- NAVIGATION ############################################### -->
 
 
-<!-- WORKS SECTION ############################################### -->
+    <div class="cbp-af-header">
+      <nav class="row">
+        <div id="logo">
+          <a href="#">
+            <img alt="Gabriela Viana UX UI Designer" src="img/logo.png">
+          </a>
+        </div>
+        <ul id="nav">
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#whatwedo">The process</a></li>
+          <li><a class="selected" href="#works">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
 
-<!-- Title /-->
+
+    <!-- END NAVIGATION ############################################### -->
+
+
+
+    <!-- HEADER ############################################### -->
+
+    <section id="header">
+
+      <div class="row">
+        <div class="twelve columns centered">
+          <header>
+            <h2>
+              <span class="fade-it3">Hello!</span><br/>
+              <small class="lead fade-it2">I am Gabriela, a UX/UI Designer located in Montreal - Canada.</small></h2>
+            <p class="fade-it2">I am passionate about new technologies and making impact in how people experience them</p>
+          </header>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- END HEADER ############################################### -->
+
+
+    <!-- WORKS SECTION ############################################### -->
+
+    <!-- Title /-->
 
 
     <div class="row">
-
       <div class="twelve columns">
-
-        <h3> Projects</h3>
-
-
-
+        <h3>Projects</h3>
       </div>
-
     </div>
 
 
-<!-- Grid of Works /-->
+    <!-- Grid of Works /-->
 
-<section id="works">
-
-
-	<!-- ROW -->
+    <section id="works">
 
 
-	    <div id="projects_grid" class="row" >
+      <!-- ROW -->
 
 
-	    <!-- DATA FILER -->
+      <div id="projects_grid" class="row">
+
+
+        <!-- DATA FILER -->
 
         <!-- <ul class="filter">
           <li><a class="active" href="#" data-filter="*">All</a></li>
@@ -132,215 +138,212 @@ I am Gabriela, a UX/UI Designer located in Montreal - Canada. </h4>
 
         <ul class="items three_up tiles centered">
 
-        <!-- PHOTO -->
+          <!-- PHOTO -->
 
-          <li class="item print"><a onclick="$('#portfolio1').slideDown(); $('#portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img src="portfolio/kronos/kronos_cover.jpg" alt="kronos ipad" >
-            <div>
-              <h5>Kronos</h5>
-              <span>WEB, Mobile, iPad</span>
-            </div>
-            </a> </li>
-
-
-
-        <!-- PHOTO -->
-
-          <li class="item webdesign"><a onclick="$('#portfolio3').slideDown(); $('#portfolio1, #portfolio2, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img src="portfolio/bbb/bed_cover.jpg" alt="Bed Bath &amp; Beyond" >
-            <div>
-              <h5>Bed Bath &amp; Beyond </h5>
-              <span>Integrated WEB channels strategy - Use Case</span>
-            </div>
-            </a> </li>
+          <li class="item print">
+            <a onclick="$('#portfolio1').slideDown(); $('#portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);">
+              <img src="portfolio/kronos/kronos_cover.jpg" alt="kronos ipad">
+              <div>
+                <h5>Kronos</h5>
+                <span>WEB, Mobile, iPad</span>
+              </div>
+            </a>
+          </li>
 
 
-        <!-- PHOTO -->
 
-          <li class="item webdesign"><a onclick="$('#portfolio4').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img src="portfolio/pmi/pmi_cover.jpg" alt="PMI Montreal" >
-            <div>
-              <h5>PMI Montreal</h5>
-              <span>WEB</span>
-            </div>
-            </a> </li>
+          <!-- PHOTO -->
 
-       <!-- PHOTO -->
+          <li class="item webdesign">
+            <a onclick="$('#portfolio3').slideDown(); $('#portfolio1, #portfolio2, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);">
+              <img src="portfolio/bbb/bed_cover.jpg" alt="Bed Bath and Beyond">
+              <div>
+                <h5>Bed Bath &amp; Beyond </h5>
+                <span>Integrated WEB channels strategy - Use Case</span>
+              </div>
+            </a>
+          </li>
 
-          <li class="item webdesign"><a onclick="$('#portfolio5').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img src="portfolio/brome/bm_cover.jpg" alt="Brome-Missisquoi.ca" >
-            <div>
-              <h5>Brome-Missisquoi</h5>
-              <span>WEB</span>
-            </div>
-            </a> </li>
 
-       <!-- PHOTO -->
+          <!-- PHOTO -->
 
-          <li class="item video"><a onclick="$('#portfolio6').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img src="portfolio/adopt/ADOPT_cover.jpg" alt="Adopt" >
-            <div>
-              <h5>Adopt</h5>
-              <span>Workshop</span>
-            </div>
-            </a> </li>
+          <li class="item webdesign">
+            <a onclick="$('#portfolio4').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);">
+              <img src="portfolio/pmi/pmi_cover.jpg" alt="PMI Montreal">
+              <div>
+                <h5>PMI Montreal</h5>
+                <span>WEB</span>
+              </div>
+            </a>
+          </li>
+
+          <!-- PHOTO -->
+
+          <li class="item webdesign">
+            <a onclick="$('#portfolio5').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);">
+              <img src="portfolio/brome/bm_cover.jpg" alt="Brome-Missisquoi.ca">
+              <div>
+                <h5>Brome-Missisquoi</h5>
+                <span>WEB</span>
+              </div>
+            </a>
+          </li>
+
+          <!-- PHOTO -->
+
+          <li class="item video">
+            <a onclick="$('#portfolio6').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);">
+              <img src="portfolio/adopt/ADOPT_cover.jpg" alt="Adopt">
+              <div>
+                <h5>Adopt</h5>
+                <span>Workshop</span>
+              </div>
+            </a>
+          </li>
 
         </ul>
 
-		</div>
+      </div>
 
-<!-- PORTFOLIO DETAIL CONTAINER -->
+      <!-- PORTFOLIO DETAIL CONTAINER -->
 
-<div id="portfolio_detail">
+      <div id="portfolio_detail">
 
 
-	<!-- PORTFOLIO DETAIL -->
+        <!-- PORTFOLIO DETAIL -->
 
-    <div id="portfolio1" class="row slide_portfolio">
+        <div id="portfolio1" class="row slide_portfolio">
 
-    	<div class="seven columns centered">
+          <div class="seven columns centered">
 
-	    		<img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio1').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
+            <img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio1').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
 
-	    		<h3>Kronos</h3>
+            <h3>Kronos</h3>
 
-	    		<p>Kronos is the current company I work for. I am a Lead UX Designer for Scheduling and Mobile related projects. I am also involved in another projects which I work most of the time with remote teams. </p>
-          <p>Kronos provides Workforce Management Solutions and it has thousands of customers world wide in different segments (Healthcare, Manufacturing, Retail), so there are many challenges to face  when thinking about what is the best user experience to delivery. Discuss with different teams (Project Managers, Architects, etc), understand problems, create concepts, flow charts, test with users are part of my routine.</p>
+            <p>Kronos is the current company I work for. I am a Lead UX Designer for Scheduling and Mobile related projects. I am also involved in another projects which I work most of the time with remote teams.</p>
+            <p>Kronos provides Workforce Management Solutions and it has thousands of customers world wide in different segments (Healthcare, Manufacturing, Retail), so there are many challenges to face when thinking about what is the best user experience to delivery. Discuss with different teams (Project Managers, Architects, etc), understand problems, create concepts, flow charts, test with users are part of my routine.</p>
 
+            <img src="portfolio/kronos/kronos_ipad2.jpg" alt="" />
+            <img src="portfolio/kronos/kronos_web.jpg" alt="" />
 
-	    		<img src="portfolio/kronos/kronos_ipad2.jpg" alt="Kronos iPad">
+          </div>
 
-	    		<img src="portfolio/kronos/kronos_web.jpg" alt="Kronos WEB">
+        </div>
 
-   		</div>
 
-    </div>
+        <!-- PORTFOLIO DETAIL -->
 
 
-	<!-- PORTFOLIO DETAIL -->
+        <div id="portfolio3" class="row slide_portfolio">
 
+          <div class="seven columns centered">
 
-    <div id="portfolio2" class="row slide_portfolio">
+            <img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio3').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
 
-    	<div class="seven columns centered">
+            <h3>Bed Bath and Beyond</h3>
 
-	    		<img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio2').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
+            <p>The project for <abbr title="Bed Bath and Beyond">BB&amp;B</abbr> (<a href="portfolio/bbb/BedBathBeyond.pdf" target="_blank">download presentation here</a>) was developed as part of an exercise for one of my courses at McGill University (Diploma in Management - E-business). The object of this project was to evaluate the current situation of the company in what concern Web Marketing Strategies and make suggestions to improve the scenario.</p>
 
-	    		<h3>L'Actualité Alimentaire</h3>
+            <p>The team realized that <abbr title="Bed Bath and Beyond">BB&amp;B</abbr> did not have an attractive e-commerce website, nor was it integrated with other channels, such as Twitter and Facebook. After analyzing some numbers and understanding their customers characteristics, some suggestions were made:</p>
+            <ul>
+              <li>Improve the User Experience in their website</li>
+              <li>Integrate the website with other channels</li>
+              <li>Create new ways to communicate with their customers by sending newsletter
+                including promotional content</li>
+              <li>Create a micro-site with a Wedding Contest to attract new customers and provoke
+                noisy in the social medias.</li>
+            </ul>
 
-	    		<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin ground round flank sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely, we've created a studio where we can not only work but also have fun and learn.</p>
+            <img src="portfolio/bbb/bbb_website.png" alt="Kronos iPad">
 
-	    		<img src="http://placehold.it/700x700" alt="EXEMPLE">
+            <img src="portfolio/bbb/bbb_contest.jpg" alt="BBB Contest">
 
-	    		<img src="http://placehold.it/700x700" alt="EXEMPLE">
+          </div>
 
-   		</div>
+        </div>
 
-    </div>
 
+        <!-- PORTFOLIO DETAIL -->
 
-	<!-- PORTFOLIO DETAIL -->
 
+        <div id="portfolio4" class="row slide_portfolio">
 
-    <div id="portfolio3" class="row slide_portfolio">
+          <div class="seven columns centered">
 
-    	<div class="seven columns centered">
+            <img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio4').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
 
-	    		<img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio3').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
+            <h3>PMI Montreal</h3>
 
-	    		<h3>Bed Bath and Beyond</h3>
+            <p>I had an opportunity to be volunteer for PMI for around 2 years. The mandate was to improve the user experience of their website and implement an e-commerce system which users could buy events (conferences, workshops, etc.). A new information architecture was elaborated with the team and then, wireframes.</p>
+            <p>All the areas of interest were rethought and repositioned. A new visual theme was also elaborated to match with the new guidelines provided by <a href="http://www.pmi.org">PMI.org</a>. With this project I won the prize of the Volunteer of the year.</p>
 
-	    		<p>The project for BB&amp;B (<a href="portfolio/bbb/BedBathBeyond.pdf" target="_blank">download presentation here</a>) was developed as part of an exercise for one of my courses at McGill University (Diploma in Management - E-business). The object of this project was to evaluate the current situation of the company in what concern Web Marketing Strategies and make suggestions to improve the scenario.</p>
+            <img src="portfolio/pmi/Pmi.jpg" alt="" />
+            <img src="portfolio/pmi/Pmi_sitemap.jpg" alt="" />
 
-<p>The team realized that BB&amp;B did not have an attractive e-commerce website, nor was it integrated with other channels, such as Twitter and Facebook. After analyzing some numbers and understanding their customers characteristics, some suggestions were made:</p>
-<ul>
-  <li>Improve the User Experience in their website</li>
-  <li>Integrate the website with other channels</li>
-  <li>Create new ways to communicate with their customers by sending newsletter including promotional content</li>
-  <li>Create a micro-site with a Wedding Contest to attract new customers and provoke noisy in the social medias.</li>
-</ul>
+          </div>
 
-	    		<img src="portfolio/bbb/bbb_website.png" alt="Kronos iPad">
+        </div>
 
-	    		<img src="portfolio/bbb/bbb_contest.jpg" alt="BBB Contest">
 
-   		</div>
+        <!-- PORTFOLIO DETAIL -->
 
-    </div>
 
+        <div id="portfolio5" class="row slide_portfolio">
 
-	<!-- PORTFOLIO DETAIL -->
+          <div class="seven columns centered">
 
+            <img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
 
-    <div id="portfolio4" class="row slide_portfolio">
+            <h3>Brome-Missisquoi</h3>
 
-    	<div class="seven columns centered">
+            <p>I was involved in the Brome-Missisquoi project while working as a Webdesigner for Kindo Communication. The requirement was to have a website where users could easily get updated about everything that is happening in the region, but at the same time, make it easy to navigate and not look crowd.</p>
+            <p>The solution was to think the main areas of interest to display and give them an equivalent weight in the layout, while using light colour pallete to not overwhelming the users.</p>
+            <p>This project was very well received and won the prize Plume d’Or by the <a href="http://www.acmq.qc.ca/" lang="fr"><abbr title="L’Association des communicateurs municipaux du Québec">ACMQ</abbr></a> for its contribution to the region.</p>
 
-	    		<img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio4').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
+            <img src="portfolio/brome/layout-indexv8.jpg" alt="">
 
-	    		<h3>PMI Montreal</h3>
+            <img src="portfolio/brome/wireframe-indexv5.jpg" alt="">
 
-	    		<p>I had an opportunity to be volunteer for PMI for around 2 years. The mandate was to improve the user experience of their website and implement an e-commerce system which users could buy events (conferences, workshops, etc.). A new information architecture was elaborated with the team and then, wireframes. All the areas of interest were rethought and repositioned. A new visual theme was also elaborated to match with the new guidelines provided by PMI.org. With this project I won the prize of the Volunteer of the year.</p>
+          </div>
 
-	    		<img src="portfolio/pmi/Pmi.jpg" alt="PMI Website">
+        </div>
 
-	    		<img src="portfolio/pmi/Pmi_sitemap.jpg" alt="PMI IA">
+        <!-- PORTFOLIO DETAIL -->
 
-   		</div>
 
-    </div>
+        <div id="portfolio6" class="row slide_portfolio">
 
+          <div class="seven columns centered">
 
-	<!-- PORTFOLIO DETAIL -->
+            <img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
 
+            <h3>Adopt</h3>
 
-    <div id="portfolio5" class="row slide_portfolio">
+            <p>At Adopt (Kronos division), I had a chance to work with the UX team to create a workshop and act as a mediator. The goal of the workshop was to better understand the project, align the team, and create personas for their new suite.</p>
+            <p>Adopt is a company that helps airlines achieve operational efficiency, reduce operational costs while increasing crew-members' quality of life.</p>
 
-    	<div class="seven columns centered">
+            <img src="portfolio/adopt/adopt_work1.jpg" alt="">
 
-	    		<img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
+            <img src="portfolio/adopt/adopt_work2.jpg" alt="">
 
-	    		<h3>Brome-Missisquoi</h3>
+          </div>
 
-	    		<p>I was involved in the Brome-Missisquoi project while working as a Webdesigner for Kindo Communication. The requirement was to have a website where users could easily get updated about everything that is happening in the region, but at the same time, make it easy to navigate and not look crowd. The solution was to think the main areas of interest to display and give them an equivalent weight in the layout, while using light colour pallete to not overwhelming the users. This project was very well received and won the prize Plume d’ Or for its contribution for the region.</p>
+        </div>
 
-	    		<img src="portfolio/brome/layout-indexv8.jpg" alt="BM Website">
+      </div>
+      <!-- END PORTFOLIO DETAIL CONTAINER -->
 
-	    		<img src="portfolio/brome/wireframe-indexv5.jpg" alt="BM Wireframe">
 
-   		</div>
+    </section>
 
-    </div>
 
-	<!-- PORTFOLIO DETAIL -->
+    <!-- END WORKS SECTION ############################################### -->
 
 
-    <div id="portfolio6" class="row slide_portfolio">
+    <!-- INTERSECTION ############################################### -->
 
-    	<div class="seven columns centered">
 
-	    		<img class="closeit" src="img/close.png" alt="Close Project" onclick="$('#portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
-
-	    		<h3>Adopt</h3>
-
-	    		<p>At Adopt (Kronos division), I had a chance to work with the UX team to create a workshop and act as a mediator. The goal of the workshop was to better understand the project, align the team, and create personas for their new suite. Adopt is a company that helps airlines achieve operational efficiency, reduce operational costs while increasing crew-members' quality of life.</p>
-
-	    		<img src="portfolio/adopt/adopt_work1.jpg" alt="Workshop Exercise 1">
-
-	    		<img src="portfolio/adopt/adopt_work2.jpg" alt="Workshop Exercise 2">
-
-   		</div>
-
-    </div>
-
-</div> 	<!-- END PORTFOLIO DETAIL CONTAINER -->
-
-
-</section>
-
-
-<!-- END WORKS SECTION ############################################### -->
-
-
-<!-- INTERSECTION ############################################### -->
-
-
-<section id="interblock">
+    <!-- section id="interblock">
 
     <div class="row">
 
@@ -361,13 +364,13 @@ I am Gabriela, a UX/UI Designer located in Montreal - Canada. </h4>
 
     </div>
 
-</section>
+</section -->
 
 
-<!-- END INTERSECTION ############################################### -->
+    <!-- END INTERSECTION ############################################### -->
 
 
-<!-- SERVICES SECTION ############################################### -->
+    <!-- SERVICES SECTION ############################################### -->
 
 
     <div class="row">
@@ -381,308 +384,253 @@ I am Gabriela, a UX/UI Designer located in Montreal - Canada. </h4>
     </div>
 
 
-<section id="whatwedo">
+    <section id="whatwedo">
 
 
-	<div class="row">
+      <div class="row">
 
+        <ul class="one_up tiles">
 
-            <ul class="one_up tiles">
+          <!-- SERVICE !-->
 
-<!-- SERVICE !-->
+          <li class="service">
 
-              <li class="service">
+            <div class="two columns">
+              <img src="img/search-01.jpg" alt="" />
+            </div>
 
-             	 <div class="two columns">
+            <div class="nine columns">
+              <h3>Understand the problem &amp; Research</h3>
 
-	             	 <img src="img/search-01.jpg" alt="">
+              <p>Once the requirements are delivered, it is important to understand what are the problems to solve for. It is also important to garther as much information as possible about the project. During this phase, there are some studies that can be useful suche as: Task Analysis, Benchmarking, Interviews, User Journeys.
+              </p>
+            </div>
 
-	             </div>
+          </li>
 
-	             <div class="nine columns">
+          <!-- SERVICE !-->
 
-		             <h3>Understand the problem & Research</h3>
+          <li class="service">
 
-		             <p>Once the requirements are delivered, it is important to understand what are the problems to solve for. It is also important to garther as much information as possible about the project. During this phase, there are some studies that can be useful suche as: Task Analysis, Benchmarking, Interviews, User Journeys. </p>
+            <div class="two columns">
+              <img src="img/idea-02.jpg" alt="">
+            </div>
 
-		         </div>
+            <div class="nine columns">
+              <h3>Generate ideas &amp; Explorer Concepts</h3>
 
-              </li>
+              <p>At this phase, the designer works as a mediator. Together, with the team (Marketing, Architect, Programmers, etc) the first ideas are elaborated. By keeping the team involved in the process, it helps to generate more ideas and assures that everybody has the same understanding of the project (Mental Models).</p>
+              <p>It is time to brainstorm, draw sketchs, wireframes, use Card Sorting techniques. It is time to innovate and think out of the box.</p>
+            </div>
 
-<!-- SERVICE !-->
+          </li>
 
-              <li class="service">
+          <!-- SERVICE !-->
 
-             	 <div class="two columns">
+          <li class="service">
 
-	             	 <img src="img/idea-02.jpg" alt="">
+            <div class="two columns">
+              <img src="img/prototype-03.jpg" alt="">
+            </div>
 
-	             </div>
+            <div class="nine columns">
+              <h3>Prototype</h3>
 
-	             <div class="nine columns">
+              <p>Once ideas are generated, discussed and some what refined, it is time to prototype. The project doesn't need to be the final product. Rapid prototypes which contains small pieces of the project can be delivered to be tested and validated. This helps to have a general idea if the concepts are in the right path, or if they need to be re-visited.</p>
+            </div>
 
-		             <h3>Generate ideas &amp; Explorer Concepts</h3>
+          </li>
 
-		             <p>At this phase, the designer works as a mediator. Together, with the team (Marketing, Architect, Programmers, etc) the first ideas are elaborated. By keeping the team involved in the process, it helps to generate more ideas and assures that everybody has the same understanding of the project (Mental Models). It is time to brainstorm, draw sketchs, wireframes, use Card Sorting techniques. It is time to innovate and think out of the box. </p>
+          <!-- SERVICE !-->
 
-		         </div>
+          <li class="service">
 
-              </li>
+            <div class="two columns">
+              <img src="img/validate-04.jpg" alt="">
+            </div>
 
-<!-- SERVICE !-->
+            <div class="nine columns">
 
-              <li class="service">
+              <h3>Test &amp; Interate</h3>
 
-             	 <div class="two columns">
+              <p>If prototypes in early or advanced stages of the project are now ready, it is time to test them. Different tests and validations can be done: by using heuristics, ISOs, and the best option: Users. It may  happen that the UX team have access to a great LAB to make the tests, but if not, invite some users, show some wireframes and ask them to think out loud. One person is better than none. It may happen that the idea is not that good or the interaction does not really work as expected. If it is the case, it is better to go back in the previous phases, otherwise, time to move forward.</p>
+              <p>Note: It is very important to report all bad and good points and scale by them severity.</p>
 
-	             	 <img src="img/prototype-03.jpg" alt="">
+            </div>
 
-	             </div>
+          </li>
 
-	             <div class="nine columns">
+          <!-- SERVICE !-->
 
-		             <h3>Prototype</h3>
+          <li class="service">
 
-		             <p>Once ideas are generated, discussed and some what refined, it is time to prototype. The project doesn't need to be the final product. Rapid prototypes which contains small pieces of the project can be delivered to be tested and validated. This helps to have a general idea if the concepts are in the right path, or if they need to be re-visited. </p>
+            <div class="two columns">
 
-		         </div>
+              <img src="img/communicate-05.jpg" alt="">
 
-              </li>
+            </div>
 
-<!-- SERVICE !-->
+            <div class="nine columns">
 
-              <li class="service">
+              <h3>Refine and communicate</h3>
 
-             	 <div class="two columns">
+              <p>Things are going pretty well. Results show that users are satisfied. All the
+                use cases are tested and they work! Time to finalize the small details and
+                communicate to the team. It is time to share a documentation for future references,
+                consistency and testing.</p>
 
-	             	 <img src="img/validate-04.jpg" alt="">
+            </div>
 
-	             </div>
+          </li>
 
-	             <div class="nine columns">
-
-		             <h3>Test &amp; Interate</h3>
-
-		             <p>If prototypes in early or advanced stages of the project are now ready, it is time to test them. Different tests and validations can be done: by using heuristics, ISOs, and the best option: Users. It may happen that the UX team have access to a great LAB to make the tests, but if not, invite some users, show some wireframes and ask them to think out loud. One person is better than none. It may happen that the idea is not that good or the interaction does not really work as expected. If it is the case, it is better to go back in the previous phases, otherwise, time to move forward. Note: It is very important to report all bad and good points and scale by them severity).</p>
-
-		         </div>
-
-              </li>
-
-              <!-- SERVICE !-->
-
-              <li class="service">
-
-             	 <div class="two columns">
-
-	             	 <img src="img/communicate-05.jpg" alt="">
-
-	             </div>
-
-	             <div class="nine columns">
-
-		             <h3>Refine and communicate</h3>
-
-		             <p>Things are going pretty well. Results show that users are satisfied. All the use cases are tested and they work! Time to finalize the small details and communicate to the team. It is time to share a documentation for future references, consistency and testing.</p>
-
-		         </div>
-
-              </li>
-
-            </ul>
-
-    </div>
-
-
-</section>
-
-<!-- END SERVICES SECTION ############################################### -->
-
-
-
-<!--  SECTION ############################################### -->
-
-
-<!-- Title /-->
-<section id="aboutme">
-
-    <div class="row">
-
-    <h3>ABOUT ME</h3>
-
-     <p>Hello!</p>
-
-<p>I have a bachelor in Social Communication (Marketing and Advertising Concentration), which I learned how to use Marketing Strategies, and a Certificate in Visual Communication Design, which I studied some disciplines such as: Ergonomics, Semiotics and HCI (Human Computer Interaction).</p>
-
-<p>I studied Web Content Accessibility at Université de Montreal with one of the best teachers in the topic: Jean Marie D’amour.</p>
-<p>Moreover, I started a Diploma in Management (Concentration in E-business) at McGill University, in which I learned more about Management and Web Marketing Strategies.</p>
-
-<p>Currently, I am a Lead-UX-Designer at Kronos and I am taking a Master’s degree in Industrial Engineering (Concentration in Software Ergonomics) at Ecole Polytechnique de Montréal.</p>
-
-      <div class="twelve columns">
-
-        <h3>SOME COMPANIES I WORK(ED) WITH</h3>
-
+        </ul>
 
       </div>
 
-    </div>
 
-    	<div class="row">
+    </section>
 
-<!-- MEMBER /-->
+    <!-- END SERVICES SECTION ############################################### -->
 
-	    	<div class="three columns member">
 
-	    		<div class="he-wrap tpl3 ">
 
-	    		<img src="portfolio/clients/kronos-logo-2012.gif.png" alt="Kronos">
+    <!--  SECTION ############################################### -->
 
 
+    <!-- Title /-->
+    <section id="aboutme">
 
-	    		</div>
+      <div class="row">
 
+        <h3>ABOUT ME</h3>
 
-		    </div>
+        <p>Hello!</p>
 
+        <p>I have a bachelor in Social Communication (Marketing and Advertising Concentration),
+          which I learned how to use Marketing Strategies, and a Certificate in Visual
+          Communication Design, which I studied some disciplines such as: Ergonomics,
+          Semiotics and HCI (Human Computer Interaction).</p>
 
-<!-- MEMBER /-->
+        <p>I studied Web Content Accessibility at Université de Montreal with one of the
+          best teachers in the topic: Jean Marie D’amour.</p>
+        <p>Moreover, I started a Diploma in Management (Concentration in E-business) at
+          McGill University, in which I learned more about Management and Web Marketing
+          Strategies.
+        </p>
 
-		    <div class="three columns member">
+        <p>Currently, I am a Lead-UX-Designer at Kronos and I am taking a Master’s degree
+          in Industrial Engineering (Concentration in Software Ergonomics) at Ecole Polytechnique
+          de Montréal.</p>
 
-	    		<div class="he-wrap tpl3 ">
-
-	    		<img src="portfolio/clients/logo_aa.png" alt="Actualite Alimentaire" >
-
-
-	    		</div>
-
-   		 	</div>
-
-<!-- MEMBER /-->
-
-   		 	<div class="three columns member">
-
-	    		<div class="he-wrap tpl3 ">
-
-	    		<img src="portfolio/clients/logo-bm.png" alt="Brome Missisquoi" >
-
-
-
-	    		</div>
-
-
-	   		</div>
-
-<!-- MEMBER /-->
-
-   		 	<div class="three columns member">
-
-	    		<div class="he-wrap tpl3 ">
-
-	    		<img src="portfolio/clients/pmi_logo.png" alt="PMI Montreal" >
-
-
-
-		    </div>
-
-	   	</div>
-
-    	<div class="row">
-
-<!-- MEMBER /-->
-
-	    	<div class="three columns member">
-
-	    		<div class="he-wrap tpl3 ">
-
-	    		<img src="portfolio/clients/integral_logo.png" alt="Colegio Integral">
-
-
-
-	    		</div>
-
-
-
-		    </div>
-
-<!-- MEMBER /-->
-
-		    <div class="three columns member">
-
-	    		<div class="he-wrap tpl3 ">
-
-	    		<img src="portfolio/clients/unifacs-logo.jpg.png" alt="UNIFACS" >
-
-
-
-	    		</div>
-
-
-   		 	</div>
-
-
-   	<!-- MEMBER /-->
-
-		    <div class="three columns member">
-
-	    		<div class="he-wrap tpl3 ">
-
-	    		<img src="portfolio/clients/pearson.png" alt="Pearson ERPI" >
-
-
-    		  </div>
-
-
-   		 	</div>
-
-            	<!-- MEMBER /-->
-
-		    <div class="three columns member">
-
-	    		<div class="he-wrap tpl3 ">
-
-	    		<img src="portfolio/clients/adopt.png" alt="Adopt" >
-
-
-    		  </div>
-
-
-   		 	</div>
-
-</section>
-
-<!-- END TEAM SECTION ############################################### -->
-
-
-<!-- INTERSECTION ( TEMPLATE DOWNLOAD ) ############################################### -->
-
-
-<section id="getit">
-
-    <div class="row">
-
-      <div class="twelve columns centered">
-
-        <h2>Want to see more about my work?</h2>
-
-
-
+        <div class="twelve columns">
+          <h3>SOME COMPANIES I WORK(ED) WITH</h3>
+        </div>
 
       </div>
 
-    </div>
+      <div class="row">
 
-</section>
+        <!-- MEMBER /-->
+
+        <div class="three columns member">
+          <div class="he-wrap tpl3 ">
+            <img src="portfolio/clients/kronos-logo-2012.gif.png" alt="Kronos" />
+          </div>
+        </div>
+
+        <!-- MEMBER /-->
+
+        <div class="three columns member">
+          <div class="he-wrap tpl3 ">
+            <img src="portfolio/clients/logo_aa.png" alt="Actualite Alimentaire" lang="fr" />
+          </div>
+        </div>
+
+        <!-- MEMBER /-->
+
+        <div class="three columns member">
+          <div class="he-wrap tpl3 ">
+            <img src="portfolio/clients/logo-bm.png" lang="fr" alt="Brome Missisquoi .ca" />
+          </div>
+        </div>
+
+        <!-- MEMBER /-->
+
+        <div class="three columns member">
+          <div class="he-wrap tpl3 ">
+            <img lang="fr" src="portfolio/clients/pmi_logo.png" alt="PMI. Section de Montréal"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+
+          <!-- MEMBER /-->
+
+          <div class="three columns member">
+            <div class="he-wrap tpl3 ">
+              <img src="portfolio/clients/integral_logo.png" lang="pt" alt="Colegio Integral. Salvador, Bahia, Brazil."
+              />
+            </div>
+          </div>
+
+          <!-- MEMBER /-->
+
+          <div class="three columns member">
+            <div class="he-wrap tpl3 ">
+              <img src="portfolio/clients/unifacs-logo.jpg.png" alt="Unifacs University of Salvador, Bahia, Brazil."
+              />
+            </div>
+          </div>
+
+          <!-- MEMBER /-->
+
+          <div class="three columns member">
+            <div class="he-wrap tpl3 ">
+              <img src="portfolio/clients/pearson.png" alt="Pearson ERPI" />
+            </div>
+          </div>
+
+          <!-- MEMBER /-->
+
+          <div class="three columns member">
+            <div class="he-wrap tpl3">
+              <img src="portfolio/clients/adopt.png" alt="Adopt. A Kronos division" />
+            </div>
+          </div>
+
+        </div>
+
+    </section>
+
+    <!-- END TEAM SECTION ############################################### -->
 
 
-<!-- END INTERSECTION ############################################### -->
+    <!-- INTERSECTION ( TEMPLATE DOWNLOAD ) ############################################### -->
 
 
-<!-- CONTACT SECTION ############################################### -->
+    <section id="getit">
+
+      <div class="row">
+
+        <div class="twelve columns centered">
+
+          <h2>Want to see more about my work?</h2>
+
+        </div>
+
+      </div>
+
+    </section>
 
 
-<!-- Title /-->
+    <!-- END INTERSECTION ############################################### -->
+
+
+    <!-- CONTACT SECTION ############################################### -->
+
+
+    <!-- Title /-->
 
 
     <div class="row">
@@ -696,140 +644,148 @@ I am Gabriela, a UX/UI Designer located in Montreal - Canada. </h4>
     </div>
 
 
-<section id="contact">
+    <section id="contact">
 
-	<div class="row contact">
+      <div class="row contact">
 
-    	<div class="twelve columns centered">
+        <div class="twelve columns centered">
 
-	    <!-- CONTACT FORM -->
+          <!-- CONTACT FORM -->
 
-	      <form name="htmlform" method="post" action="form_sender.php">
+          <form name="htmlform" method="post" action="form_sender.php">
 
-	    	<div class="five columns">
+            <div class="five columns">
 
-	    		<input type="text" name="name" placeholder="YOUR NAME" required>
-	    		<input type="text" name="phone" placeholder="YOUR PHONE" required>
-	    		<input type="email" name="email" placeholder="YOUR E-MAIL" required>
+              <input type="text" name="name" placeholder="YOUR NAME" required>
+              <input type="text" name="phone" placeholder="YOUR PHONE" required>
+              <input type="email" name="email" placeholder="YOUR E-MAIL" required>
 
-	    	</div>
+            </div>
 
-	    	<div class="seven columns">
+            <div class="seven columns">
 
-	    		<textarea name="comments" cols="1" rows="5" placeholder="YOUR MESSAGE" required ></textarea>
+              <textarea name="comments" cols="1" rows="5" placeholder="YOUR MESSAGE" required></textarea>
 
-	    	</div>
+            </div>
 
-	    		<button name="send" type="submit" class="submit">SEND</button>
-
-
-	     </form>
-
-	   	</div>
-
-    </div>
-
-</section>
-
-<!-- END CONTACT SECTION ############################################### -->
+            <button name="send" type="submit" class="submit">SEND</button>
 
 
-<!-- FOOTER INTERSECTION SECTION ############################################### -->
+          </form>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- END CONTACT SECTION ############################################### -->
 
 
-<section id="interblock_footer">
+    <!-- FOOTER INTERSECTION SECTION ############################################### -->
 
-    <div class="row">
 
-		  <div class="eight columns">
+    <section id="interblock_footer">
 
-	        <h2>Thank you for your time.</h2>
-	        <p>You can find me at:</p>
+      <div class="row">
 
-    </div>
+        <div class="eight columns">
 
-<!-- Social Icon /-->
+          <h2>Thank you for your time.</h2>
+          <p>You can find me on:</p>
 
-      <div class="four columns text-right ">
+        </div>
+
+        <!-- Social Icon /-->
+
+        <div class="four columns text-right ">
 
           <ul>
 
-          	<li><a href="https://www.facebook.com/gabiviana" target="_blank"><i class="icon" data-icon="&#xe045;"></i></a></li>
+            <li><a href="https://www.facebook.com/gabiviana" target="_blank"><i class="icon" data-icon="&#xe045;"></i></a>
+            </li>
 
-          	<li><a href="https://twitter.com/gabiviana" target="_blank"><i class='icon' data-icon="&#xe033;"></i></a></li>
+            <li><a href="https://twitter.com/gabiviana" target="_blank"><i class='icon' data-icon="&#xe033;"></i></a>
+            </li>
 
-          	<li><a href="https://www.linkedin.com/in/gabiviana" target="_blank"><i class='icon' data-icon="&#xe03e;"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/gabiviana" target="_blank"><i class='icon' data-icon="&#xe03e;"></i></a>
+            </li>
 
 
           </ul>
 
+        </div>
+
       </div>
 
+
+    </section>
+
+
+    <!-- END FOOTER INTERSECTION ############################################### -->
+
+
+    <!-- FOOTER CONTACT INFO SECTION ############################################### -->
+
+
+    <section id="contact_info">
+
+      <div class="row">
+
+        <div class="twelve columns">
+
+          <div class="four columns">
+            <p>Montreal, Canada</p>
+          </div>
+
+          <div class="four columns text-center">
+            <p><a href="#">gabiviana@gabiviana.com</a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+
+    <!-- END FOOTER CONTACT INFO SECTION ############################################### -->
+
+
     </div>
+    <!-- end of #container -->
 
 
-</section>
+    <!-- build:js js/dependencies.min.js -->
+    <script src="imports/jquery.parallax-1.1.3.js" type="text/javascript"></script>
+    <!-- jQuery Parallax -->
+    <script src="imports/waypoints.min.js" type="text/javascript"></script>
+    <!-- Smooth Scrolling -->
+    <script src="imports/jquery.scrollto.js" type="text/javascript"></script>
+    <!-- ScrollTo -->
+    <script src="imports/classie.js" type="text/javascript"></script>
+    <!-- Menu -->
+    <script src="imports/jquery.hoverdir.min.js" type="text/javascript"></script>
+    <!-- Filter Works -->
+    <script src="imports/jquery.isotope.js" type="text/javascript"></script>
+    <!-- Also for Filter Works -->
+    <script src="imports/jquery.hoverex.min.js" type="text/javascript"></script>
+    <!-- Hoverex for social icon on member -->
+    <!-- endbuild -->
+    <!-- build:js js/main.min.js -->
+    <script src="js/main.js" type="text/javascript"></script>
+    <!-- endbuild -->
 
-
-<!-- END FOOTER INTERSECTION ############################################### -->
-
-
-<!-- FOOTER CONTACT INFO SECTION ############################################### -->
-
-
-<section id="contact_info">
-
-    <div class="row">
-
-    	<div class="twelve columns">
-
-	    	<div class="four columns">
-		    	<p>Montreal, Canada</p>
-		    </div>
-
-		    <div class="four columns text-center">
-			    <p><a href="#">gabiviana@gabiviana.com</a></p>
-   		 	</div>
-
-   		 	<div class="four columns text-right">
-	   		 	<p>514 7542422</p>
-	   		</div>
-
-	   	</div>
-
-    </div>
-
-</section>
-
-
-
-
-<!-- END FOOTER CONTACT INFO SECTION ############################################### -->
-
-
-</div> <!-- end of #container -->
-
-
-  <!-- build:js js/dependencies.js -->
-  <script src="bower_components/jquery/jquery.min.js" type="text/javascript"></script>
-  <script src="js_imports/jquery.parallax-1.1.3.js" type="text/javascript"></script> <!-- jQuery Parallax -->
-  <script src="js_imports/waypoints.min.js" type="text/javascript"></script> <!-- Smooth Scrolling -->
-  <script src="js_imports/jquery.scrollto.js" type="text/javascript"></script> <!-- ScrollTo -->
-  <script src="js_imports/classie.js" type="text/javascript"></script> <!-- Menu -->
-  <script src="js_imports/jquery.hoverdir.min.js" type="text/javascript"></script> <!-- Filter Works -->
-  <script src="js_imports/jquery.isotope.js" type="text/javascript"></script> <!-- Also for Filter Works -->
-  <script src="js_imports/jquery.hoverex.min.js" type="text/javascript"></script> <!-- Hoverex for social icon on member -->
-  <!-- endbuild -->
-  <!-- build:js js/main.js -->
-  <script src="js/main.js" type="text/javascript"></script>
-  <!-- endbuild -->
-
-  <!-- Change UA-XXXXX-X to be your site's ID -->
-  <!--<script>
+    <!-- Change UA-XXXXX-X to be your site's ID -->
+    <!--<script>
     window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
     Modernizr.load({
       load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
     });
   </script>  -->
-  </body>
+</body>
+
 </html>
