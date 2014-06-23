@@ -1,5 +1,4 @@
 node_modules/
-bower_components/
-*.min*
-.tmp
-dist
+web/bower_components/
+.tmp/
+dist/

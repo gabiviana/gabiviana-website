@@ -4,21 +4,26 @@ Gabriela Viana
   Email: gabiviana@gabiviana.com
   Twitter: @gabiviana
   Location: Montréal, Québec, Canada
+  Role: Author
 
 Renoir Boulanger
   Email: hello@renoirboulanger.com
   Twitter: @renoirb
   Location: Montréal, Quebec, Canada
   Web: renoirboulanger.com
-
+  Role: Deployment, HTML/CSS/JavaScript review
 
 
 /* THANKS */
 
 Supview
-  Twitter: @Supview
+  Email: hello@iamsupview.be
+  Contact: http://themeforest.net/user/Supview
   Web: www.iamsupview.be
+  Twitter: @Supview
+  Role: Theme Designer of the present theme
 
+If you want to use this theme, please respect the rights of the theme designer and purchase a license.
 
 
 /* SITE */
