@@ -1066,7 +1066,7 @@ form {overflow:hidden}
 
     /* Lower margin-top for better scrolling */
 
-    .slide_portfolio .closeit { cursor: pointer; margin-top:10px; margin-bottom:0px;}
+    .slide_portfolio .closeit { cursor: pointer; margin-top:90px; margin-bottom:0px;}
 
     /* Padding on Portfolio Detail Text */
 

@@ -1,16 +1,13 @@
 
+  /*-----------------------------------------------------------------------------------*/
+  /*  00. LOAD FONTS
+  /*-----------------------------------------------------------------------------------*/
 
-// Document ready
-$(function() {
-
-/*-----------------------------------------------------------------------------------*/
-/*  00. LOAD FONTS
-/*-----------------------------------------------------------------------------------*/
 
   WebFontConfig = {
     google: { families: [ 'Playfair+Display::latin,latin-ext', 'Open+Sans:400,300,600,700:latin,latin-ext' ] }
   };
-  (function() {
+  (function loadWebFonts() {
     var wf = document.createElement('script');
     wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
       '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
@@ -20,28 +17,11 @@ $(function() {
     s.parentNode.insertBefore(wf, s);
   })();
 
+  /*-----------------------------------------------------------------------------------*/
+  /*	02. NAVBAR STICKY + SELECTED
+  /*-----------------------------------------------------------------------------------*/
 
-/*-----------------------------------------------------------------------------------*/
-/*	01. PARALLAX SETTING
-/*-----------------------------------------------------------------------------------*/
-
-/*
-  $(document).ready(function(){
-	//.parallax(xPosition, speedFactor, outerHeight) options:
-	//xPosition - Horizontal position of the element
-	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
-	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
-	//$('#header').parallax("50%", 0.8);
-  });
-*/
-
-/*-----------------------------------------------------------------------------------*/
-/*	02. NAVBAR STICKY + SELECTED
-/*-----------------------------------------------------------------------------------*/
-
-
-
-  var cbpAnimatedHeader = (function() {
+  var cbpAnimatedHeader = (function cbpAnimatedHeader() {
   	var docElem = document.documentElement,
   		header = document.querySelector( '.cbp-af-header' ),
   		didScroll = false,
@@ -91,74 +71,70 @@ $(function() {
 		offset: '30'
 	})
 
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	03. SMOOTH SCROLLING
+  /*-----------------------------------------------------------------------------------*/
+
+$(document).ready(function prepareSmoothScrolling() {
+  $('nav a, .buttongo a').click(function(e){
+      $('html,body').scrollTo(this.hash,this.hash);
+      e.preventDefault();
+  });
 });
 
+  /*-----------------------------------------------------------------------------------*/
+  /*	04. ISOTOPE PROJECTS & FILTERS
+  /*-----------------------------------------------------------------------------------*/
 
-/*-----------------------------------------------------------------------------------*/
-/*	03. SMOOTH SCROLLING
-/*-----------------------------------------------------------------------------------*/
+  /*
+  jQuery(document).ready(function ($) {
+      var $container = $('#projects_grid .items');
 
+      $container.imagesLoaded(function () {
+          $container.isotope({
+              itemSelector: '.item',
+              layoutMode: 'fitRows',
+              filter: '*'
+          });
+      });
 
-$('nav a, .buttongo a').click(function(e){
-    $('html,body').scrollTo(this.hash,this.hash);
-    e.preventDefault();
+      $('.filter li a').click(function () {
+
+          $('.filter li a').removeClass('active');
+          $(this).addClass('active');
+
+          var selector = $(this).attr('data-filter');
+          $container.isotope({
+              filter: selector
+          });
+
+          return false;
+      });
+  });
+  */
+
+  /*-----------------------------------------------------------------------------------*/
+  /*	05. PROJECTS PORTFOLIO HOVER
+  /*-----------------------------------------------------------------------------------*/
+
+$(document).ready(function prepareHoverdir() {
+  $('.items > li, .frame > a').each(function () {
+      $(this).hoverdir();
+  });
 });
 
+  /*-----------------------------------------------------------------------------------*/
+  /*	06. RESPONSIVE MENU
+  /*-----------------------------------------------------------------------------------*/
 
-
-/*-----------------------------------------------------------------------------------*/
-/*	04. ISOTOPE PROJECTS & FILTERS
-/*-----------------------------------------------------------------------------------*/
-
-
-jQuery(document).ready(function ($) {
-    var $container = $('#projects_grid .items');
-
-    $container.imagesLoaded(function () {
-        $container.isotope({
-            itemSelector: '.item',
-            layoutMode: 'fitRows',
-            filter: '*'
-        });
-    });
-
-    $('.filter li a').click(function () {
-
-        $('.filter li a').removeClass('active');
-        $(this).addClass('active');
-
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-            filter: selector
-        });
-
-        return false;
-    });
-});
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	05. PROJECTS PORTFOLIO HOVER
-/*-----------------------------------------------------------------------------------*/
-$(function () {
-    $(' .items > li, .frame > a ').each(function () {
-        $(this).hoverdir();
-    });
-});
-
-/*-----------------------------------------------------------------------------------*/
-/*	06. RESPONSIVE MENU
-/*-----------------------------------------------------------------------------------*/
-$(function () {
-		jQuery("#collapse").hide();
-		jQuery("#collapse-menu").on("click", function () {
-
-		    jQuery("#collapse").slideToggle(300);
-		    return false;
-
-		}, function () {
-
-		    jQuery("#collapse").slideToggle(300);
-		    return false;
-		});
+$(document).ready(function prepareCollapseMenu() {
+	$("#collapse").hide();
+	$("#collapse-menu").on("click", function (event) {
+	    $("#collapse").slideToggle(300);
+      event.preventDefault();
+	}, function (event) {
+	    $("#collapse").slideToggle(300);
+	    event.preventDefault();
+	});
 });
