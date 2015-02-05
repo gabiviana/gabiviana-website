@@ -1,12 +1,12 @@
 <?php
 if(isset($_POST['email'])) {
-     
+
     // CHANGE THE TWO LINES BELOW
     $email_to = "gabiviana@gabiviana.com";
-     
-    $email_subject = "My website";
-     
-     
+
+    $email_subject = "GabiViana.com contact form message";
+
+
     function died($error) {
         // your error code can go here
         echo "We are very sorry, but there were error(s) found with the form you submitted. ";
@@ -15,17 +15,17 @@ if(isset($_POST['email'])) {
         echo "Please go back and fix these errors.<br /><br />";
         die();
     }
-     
+
     // validation expected data exists
     if(
         !isset($_POST['email']) ||
         !isset($_POST['comments'])) {
-        died('We are sorry, but there appears to be a problem with the form you submitted.');      
+        died('We are sorry, but there appears to be a problem with the form you submitted.');
     }
-     
+
     $email_from = $_POST['email']; // required
     $comments = $_POST['comments']; // required
-     
+
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
   if(!preg_match($email_exp,$email_from)) {
@@ -38,23 +38,23 @@ if(isset($_POST['email'])) {
     died($error_message);
   }
     $email_message = "Form details below.\n\n";
-     
+
     function clean_string($string) {
       $bad = array("content-type","bcc:","to:","cc:","href");
       return str_replace($bad,"",$string);
     }
-     
+
     $email_message .= "Email: ".clean_string($email_from)."\n";
     $email_message .= "Comments: ".clean_string($comments)."\n";
-     
-     
+
+
 // create email headers
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers); 
+@mail($email_to, $email_subject, $email_message, $headers);
 ?>
- 
+
 <!-- HTML SECTION IS LIKE THE INDEX.HTML SECTION :: JUST CHANGE WHAT YOU NEED TO CHANGE ! -->
 
 
@@ -78,7 +78,7 @@ $headers = 'From: '.$email_from."\r\n".
     <link rel="stylesheet" href="css/style.css">
 
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
-    
+
 </head>
 
 
@@ -89,26 +89,26 @@ $headers = 'From: '.$email_from."\r\n".
 
 
 	<!-- TITLE -->
-	
+
 	    <div class="row">
 	      <div class="twelve columns centered">
 	      <br>
 	      <br>
 	        <h2>Thank you. I will reply soon.</h2>
-	      </div> 
+	      </div>
 	    </div>
 
 	    <div class="row" style="margin-top:35px;">
-	    
+
 	    <div class="twelve columns centered">
 		      <a class="buttom" href="index.html" >Back to the website</a>
 		  </div>
-	    
+
 	    </div>
 
 
 
-	    
+
 
 
 <!-- END CONTAINER EMAIL ############################################### -->
