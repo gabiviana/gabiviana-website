@@ -202,7 +202,6 @@ h2 {
 }
 
 h3 {
-    background: url("../img/line.gif") no-repeat scroll center 55px transparent;
     color: #4D4C4C;
     font: 18px 'latobold', serif;
     letter-spacing: 2px;
@@ -505,7 +504,7 @@ nav {
 
 #header .lead {
     font: bold 16px 'latolight', sans-serif;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: #FFF;
 }
 
@@ -877,6 +876,11 @@ nav {
 /* Section */
 
 #contact h3,
+#interblock_footer h3 {
+    padding-bottom: 5px !important;
+    color: inherit;
+}
+
 #contact a {
     color: inherit;
 }
@@ -1001,7 +1005,7 @@ form {
 /* Section */
 
 #interblock_footer {
-    padding: 100px 0;
+    padding: 20px 0;
     background: #68a697;
     color: #FFF;
 }
@@ -1015,6 +1019,7 @@ form {
 
 /* Text under blockquote */
 
+#contact p,
 #interblock_footer p {
     color: #FFF;
     font-size: 1.3rem;
@@ -1138,7 +1143,7 @@ form {
 
 #collapse {
     display: none;
-	background:08213d;
+    background: #08213d;
 }
 
 .mobile-menu h3 {
