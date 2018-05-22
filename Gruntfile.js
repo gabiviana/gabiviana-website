@@ -33,7 +33,7 @@ module.exports = function (grunt) {
       }
     },
     clean: {
-        dist: ['.tmp', 'dist/*']
+      dist: ['.tmp', 'dist/*']
     },
     copy: {
       dist: {
@@ -57,8 +57,8 @@ module.exports = function (grunt) {
       dist: {
         files: {
           'dist/css/gabiviana.min.css': [
-              '.tmp/css/{,*/}*.css',
-              'web/css/{,*/}*.css'
+            '.tmp/css/{,*/}*.css',
+            'web/css/{,*/}*.css'
           ]
         }
       }

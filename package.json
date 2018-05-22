@@ -2,7 +2,18 @@
   "name": "gabiviana.com",
   "version": "3.0.0",
   "description": "Homepage of Gabriela Viana",
-  "author": "Gabriela Viana <gabiviana@gabiviana.com>",
+  "homepage": "https://github.com/gabiviana/gabiviana-website#readme",
+  "authors": [
+    {
+      "name": "Gabriela Viana",
+      "email": "gabiviana@gabiviana.com"
+    },
+    {
+      "name": "Renoir Boulanger",
+      "email": "hello@renoirboulanger.com",
+      "url": "http://renoirb.com"
+    }
+  ],
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-autoprefixer": "0.7.3",
@@ -18,12 +29,11 @@
     "grunt-ftp-deploy": "",
     "grunt-usemin": "^2.2.0"
   },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "readmeFilename": "README.md",
   "repository": {
     "url": "https://github.com/gabiviana/gabiviana-website",
     "type": "git"
+  },
+  "config": {
+    "port": "8080"
   }
 }
