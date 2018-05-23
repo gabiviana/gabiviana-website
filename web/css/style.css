@@ -454,7 +454,7 @@ nav {
 /* FOR REDUCING THE HEIGHT OF THE NAVIGATION */
 
 .cbp-af-header #logo {
-    padding: 30px 30px 0px 0px;
+    padding: 25px 30px 0px 0px;
     width: 395px;
 }
 
@@ -1092,8 +1092,9 @@ form {
     display: block;
     text-align: center;
     padding: 15px 0;
-}
+    background-color: #08213d;
 
+}
 .mobile-menu .logo {
     padding: 20px 0 0 20px;
 }
@@ -1164,6 +1165,15 @@ form {
     /* Display the mobile menu */
     .mobile-menu {
         display: block;
+    }
+    .mobile-menu #collapse-menu {
+        height: 100%;
+        position: relative;
+    }
+    .mobile-menu #collapse-menu img {
+        max-width: 100%;
+        max-height: 80%;
+        height: 50px;
     }
     form {
         overflow: hidden;
