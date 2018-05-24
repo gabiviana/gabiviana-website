@@ -1,18 +1,29 @@
 <template>
-  <div class="gv-logo--component">
+  <div class="logo--component">
     <img
       src="@/assets/images/logotype.svg"
-      :alt="logotypeText"
+      :alt="alt"
     />
   </div>
 </template>
+<script>
+export default {
+  name: 'Logo',
+  props: {
+    alt: {
+      type: String,
+      default: '',
+    },
+  },
+}
+</script>
 <style>
-.gv-logo--component {
+.logo--component {
   width: 300px;
   height: 100%;
   position: relative;
 }
-.gv-logo--component img {
+.logo--component img {
   max-width: 100%;
   max-height: 80%;
   height: auto;

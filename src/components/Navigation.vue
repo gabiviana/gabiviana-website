@@ -1,33 +1,40 @@
 <template>
-  <nav
-    class="gv-navigation--component"
+  <div
+    class="navigation--component"
   >
-    <el-menu
-      :default-active="active"
-      @select="handleSelect"
-      mode="horizontal"
-      text-color="#fff"
-      active-text-color="#a0cac0"
-    >
-      <li
-        class="navigation-logo"
+    <nav>
+      <el-menu
+        :default-active="active"
+        @select="handleSelect"
+        mode="horizontal"
+        text-color="#fff"
+        active-text-color="#a0cac0"
       >
-        <logo />
-      </li>
-      <el-menu-item index="1">About me</el-menu-item>
-      <el-menu-item index="2">Some projects</el-menu-item>
-      <el-menu-item index="3">Contact</el-menu-item>
-    </el-menu>
-  </nav>
+        <li
+          class="navigation-logo"
+        >
+          <logo
+            :alt="logoAlt"
+          />
+        </li>
+        <el-menu-item index="1">About me</el-menu-item>
+        <el-menu-item index="2">Some projects</el-menu-item>
+        <el-menu-item index="3">Contact</el-menu-item>
+      </el-menu>
+    </nav>
+    <img :src="splash" />
+  </div>
 </template>
 
 <script>
+import splash from '@/assets/images/splash@2x.jpg'
 import Logo from '@/components/Logo'
 export default {
   name: 'navigation',
   data () {
     return {
       active: '0',
+      splash,
     }
   },
   components: {
@@ -40,17 +47,19 @@ export default {
     },
   },
   props: {
-    logotypeText: {
+    logoAlt: {
       type: String,
-      // https://apps.timwhitlock.info/unicode/inspect/hex/1F36B > 🍫
-      default: `Gabriela Viana ✲ Product Designer 🍫`,
+      default: '',
     },
   },
 }
 </script>
 <style lang="scss">
-.gv-navigation--component {
-  background-color: #08213d;
+.navigation-component {
+  position: relative;
+}
+.navigation--component nav {
+  background-color: #08213d; // rgba(8,33,61, 1);
   text-transform: uppercase;
   font-size: 1.3em;
   position: relative;

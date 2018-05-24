@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <navigation />
+    <navigation
+      :logo-alt="logoAlt"
+    />
     <el-container>
       <el-header>
       </el-header>
@@ -19,6 +21,12 @@ import Navigation from './components/Navigation.vue'
 
 export default {
   name: 'app',
+  data () {
+    return {
+      // https://apps.timwhitlock.info/unicode/inspect/hex/1F36B > 🍫
+      logoAlt: `Gabriela Viana ✲ Product Designer 🍫`,
+    }
+  },
   components: {
     Navigation,
   },
